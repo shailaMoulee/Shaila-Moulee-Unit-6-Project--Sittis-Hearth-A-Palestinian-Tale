@@ -1,0 +1,837 @@
+<!DOCTYPE html> <html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Shaila Moulee Unit 6 Project | Sitti's Hearth: A Palestinian Tale</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js "></script>
+    <style>html {
+    height: 100%;
+    width: 100%;
+}
+
+/*Youtube video container*/
+.video {
+    width: 460px; 
+    height: 215px;
+}
+
+
+/*Content containers*/
+.rightContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    right: 130px;
+}
+
+.topRightContainer {
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 130px;
+}
+
+.leftContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}
+
+.farLeftContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    left: -50px;
+}
+
+.middleContainer {
+    width: 80%;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+}
+
+.bottomContainer {
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+
+/*Button*/
+button {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0px;
+    width: 150px;
+    height: 50px;
+    border: gray solid 2px;
+    cursor: pointer;
+}
+
+
+/*Landing Page Section*/
+.landingPage {
+    background: url("https://i.postimg.cc/3xr1BLRY/sitti.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Sitti Intro Section*/
+.landingPage_Play {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/462/original/single-continuous-line-drawing-of-young-pretty-saudi-arabian-muslimah-wearing-burqa-and-pensive-seriously-traditional-muslim-woman-niqab-with-hijab-concept-one-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Home Page*/
+.homePage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/980/687/original/single-continuous-line-drawing-green-eco-modest-house-at-village-home-building-construction-isolated-minimalism-concept-dynamic-one-line-draw-graphic-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Lamp Activity Section*/
+.lampActivity {
+    background: url("https://i.postimg.cc/2yF6VSdF/lamp-No-Color-Photo-Room-png-Photo-Room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Cooking Page*/
+.cookingPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/985/697/original/continuous-one-line-drawing-arabian-housewife-enjoying-smell-of-cooking-from-pot-prepare-food-at-cozy-kitchen-cooking-at-home-healthy-food-single-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Food Activity Section*/
+.foodActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/023/636/564/original/one-single-line-drawing-of-muslim-people-open-and-raise-hands-to-pray-to-god-islamic-holy-day-ramadan-kareem-and-eid-mubarak-greeting-card-concept-continuous-line-draw-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    cursor: url('https://i.postimg.cc/cJwMjbN9/plate-1.webp'), auto;
+}
+
+
+/*Choose Activity Page Section*/
+.chooseActivityPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/988/567/original/continuous-one-line-drawing-smiling-confident-arabian-woman-in-hijab-keeping-arms-crossed-active-businesswoman-standing-with-folded-arms-pose-single-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Gardening Activity Section*/
+.gardeningActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/473/original/single-continuous-line-drawing-of-young-happy-saudi-arabian-muslimah-wearing-burqa-while-holding-rose-flower-traditional-muslim-woman-niqab-with-hijab-concept-one-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Gardening Seeds Activity Section*/
+.gardeningSeedsActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/980/718/original/single-one-line-drawing-of-open-hand-gesture-holding-hand-icon-silhouette-for-organization-concept-infographics-charity-presentation-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.patches {
+    cursor: url('https://i.postimg.cc/mgZcYpdf/can-3.png'), auto;
+}
+
+
+/*Sewing Activity Section*/
+.sewingActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/023/636/540/original/single-continuous-line-drawing-of-young-beautiful-muslimah-wearing-head-scarf-leaning-on-the-wall-beautiful-asian-woman-model-in-trendy-hijab-fashion-concept-one-line-draw-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Sewing Clothes Activity Section*/
+.sewingClothesActivity {
+    background: url("https://i.postimg.cc/LXZ98Xsh/sewing-Machine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Invitation for Dua Section*/
+.duaInvitationPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/988/569/original/single-one-line-drawing-young-arabic-woman-keeping-hands-on-chest-smiling-friendly-female-expressing-gratitude-emotion-body-language-concept-continuous-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+} 
+
+
+/*Dua for Palestine Section*/
+.duaPage {
+    background: url("https://i.postimg.cc/J72pkYjs/hand.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.duaPage .text {
+    background: rgba(0, 0, 0, 0.75); 
+    color: white; 
+    padding: 4px 8px;
+}
+
+.duaPageText {
+    font-size: 22px;
+}
+
+
+/*Game Closing Section*/
+.closingPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/439/original/one-continuous-line-drawing-of-young-happy-saudi-arabian-muslimah-wearing-burqa-and-covering-face-with-hands-traditional-islamic-woman-niqab-dress-concept-single-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}</style></head>
+    
+   <body>
+        <script src="script.js"></script>
+        
+        <!--Game Landing Page Section-->
+        <div class="landingPage">
+            <div class="landing">
+                <div class="rightContainer">
+                    <h1>Sitti's Hearth: <span style="color: darkviolet;">A Palestinian Tale</span></h1>
+                    <div class="options">
+                        <button class="playButton">Play</button>
+                        <button class="aboutButton">About</button>
+                        <button class="creditsButton">Credits</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Landing Page Play Instance-->
+        <div class="landingPage_Play">
+            <div class="rightContainer">
+                <div class="text">
+                    <p class="landingSitti">Ahlan wa sahlan! I am Sitti, a Palestinian grandmother from the village of Dimra. The rhythms of our lives here are woven with stories passed down through generations. Here, in the humble embrace of Dimra, I invite you to join me on a journey through our cherished ways.<br><br>Would you join me in embracing our traditions and lending a hand with daily chores, dear friend?</p>
+                </div>
+                <div class="options">
+                    <button class="landingYesButton">Yes</button>
+                    <button class="landingNoButton">No</button>
+                    <button class="replayButton">Replay</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Landing Page About Instance-->
+        <div class="landingPage_About">
+            <div class="rightContainer">
+                <div class="text">
+                    <p>
+                        Step into Sitti's world in the village of Dimra. Help Sitti with daily tasks, cook traditional meals, and tend to the village garden. Your choices shape the story, revealing the rich tapestry of Palestinian heritage. Immerse yourself in a heartfelt adventure celebrating unity, resilience, and the enduring spirit of community.
+                    </p>
+                </div>
+                <div class="options">
+                    <button class="landingBackButton">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Landing Page Credits Instance-->
+        <div class="landingPage_Credits">
+            <div class="rightContainer">
+                <div class="text">
+                    <p style="font-style: italic">Dedicated to the lionhearted people of Palestine</p>
+                    <p>
+                        Developer: Shaila Moulee<br>
+                        Writer: Shaila Moulee<br>
+                        Artist: SimpleLine
+                    </p>
+                </div>
+                <div class="options">
+                    <button class="landingBackButton">Back</button>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--Home Page-->
+        <div class="homePage">
+            <div class="home">
+                <div class="bottomContainer">
+                    <div class="text">
+                        <p class="homeText">Shukran, habibi! Our village, crowned by ancient minarets and adorned with homes crafted from the sun-kissed earth, echoes with the whispers of generations past. Your willingness to join reflects the spirit of 'sumud,' our steadfast perseverance, deeply rooted within our Palestinian heritage.</p>
+                    </div>
+                    <div class="options">
+                        <button class="homeNextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--Lamp Activity-->
+        <div class="lampActivity">
+            <div class="lamp">
+                <div class="leftContainer">
+                    <div class="text">
+                        <p class="lampText">Dear one, as the sun sets upon our beloved Dimra, my humble adobe dims with the fading light. Would you kindly assist me in illuminating our surroundings? Look to the lantern resting on the table; it awaits your touch, just as the spirit of our ancestors beckons for unity and radiance.<br><br>Double-click on the lantern nearby; it holds the secret to our guiding light.</p>
+                    </div>
+                    <div class="options">
+                        <button class="lampNextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Cooking Page-->
+        <div class="cookingPage">
+            <div class="cooking">
+                <div class="rightContainer">
+                    <div class="text">
+                        <p class="cookingText">The aroma of Maqluba dances with memories of unity, while the sweetness of Knafeh mirrors the warmth of our gatherings. In our Palestinian culture, gathering to share food is akin to sharing blessings. As the Quran teaches, 'And feed with food the needy, the orphan, and the captive' [Quran 76:8].<br><br>Alas, in the rush of the day, I seem to have misplaced the food meant to share with our beloved neighborhood children.<br><br>Hover over the dishes to help me gather them.</p>
+                    </div>
+                    <div class="options">
+                        <button class="cookingNextButton">Gather</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Food Activity-->
+        <div class="foodActivity">
+            <div class="food">
+                <div class="dishes">
+                    <div class="items">
+                        <div class="item">
+                            <img class="item1" src="https://static.vecteezy.com/system/resources/previews/024/108/305/original/single-continuous-line-drawing-of-stylized-healthy-sunny-side-up-egg-logo-label-emblem-food-restaurant-concept-modern-one-line-draw-design-illustration-for-cafe-shop-or-food-delivery-service-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="item2" src="https://static.vecteezy.com/system/resources/previews/023/636/606/original/one-continuous-line-drawing-of-fresh-delicious-french-long-thin-loaf-bread-restaurant-logo-emblem-baguette-cafe-shop-logotype-template-concept-modern-single-line-draw-design-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="item3" src="https://static.vecteezy.com/system/resources/previews/026/990/455/original/one-continuous-line-drawing-of-fresh-delicious-baked-carp-fish-restaurant-logo-emblem-grilled-seafood-cafe-shop-logotype-template-concept-modern-single-line-draw-design-graphic-illustration-png.png">
+                        </div>
+                    </div>
+                    
+                    <div class="items">
+                        <div class="item">
+                            <img class="item4" src="https://static.vecteezy.com/system/resources/thumbnails/026/990/540/small_2x/single-continuous-line-drawing-of-stylized-japanese-maki-sushi-bar-logo-label-emblem-sea-food-restaurant-concept-modern-one-line-draw-design-illustration-for-shop-or-food-delivery-service-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="item5" src="https://static.vecteezy.com/system/resources/previews/024/108/424/non_2x/one-continuous-line-drawing-of-fresh-delicious-salad-restaurant-logo-emblem-from-top-view-healthy-organic-food-cafe-shop-logotype-template-concept-modern-single-line-draw-design-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="item6" src="https://static.vecteezy.com/system/resources/thumbnails/022/638/744/small/single-continuous-line-drawing-of-stylized-spicy-wings-fried-chicken-logo-label-emblem-fast-food-restaurant-concept-modern-one-line-draw-design-vector-illustration-for-shop-or-food-delivery-service-png.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomContainer">
+                    <div class="options">
+                        <button class="foodNextButton" disabled="">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--Choose Activity Page-->
+        <div class="chooseActivityPage">
+            <div class="choose">
+                <div class="leftContainer">
+                    <div class="text">
+                        <p class="chooseText">Barakallahu feek. Your kindness and willingness to assist me warm my old heart, dear friend. Now, would you honor me further? You have a choice: help tend to the garden, where each blossom speaks of hope and perseverance, or join me in the art of sewing, where threads intertwine like our stories.</p>
+                    </div>
+                    <div class="options">
+                        <button class="chooseGardeningButton">Gardening</button>
+                    </div>
+                </div>
+                
+                <div class="rightContainer">
+                    <div class="text">
+                        <p class="chooseText">Should you choose to delve into the garden, nurturing life from the soil, know that your touch breathes life into our land. And if your path leads to sewing, together we'll spin tales through the delicate art of needle and thread. Your decision, my love, will be yet another chapter in the tapestry of our shared experiences.</p>
+                    </div>
+                    <div class="options">
+                        <button class="chooseSewingButton">Sewing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Gardening Activity-->
+        <div class="gardeningActivity">
+            <div class="gardening">
+                <div class="leftContainer">
+                    <div class="text">
+                        <p class="gardeningText">Ah, the garden, where the Earth whispers its secrets and life blooms in harmony. I find solace among the blossoms and the olive trees, our revered companions, cherished symbols of our Palestinian heritage. Their roots run deep, like the stories etched into the soul of our land. As the Quran tells us, 'And We sent down from the sky blessed water whereby We caused gardens and harvest-grain to grow [Quran, 50:9].<br><br>The garden awaits your touch, like the gentle rain upon parched land, a blessing from above. Let the water breathe life into their waiting souls and nourish them as the rain does the earth.<br><br>Hover over the seeds and grant them the nourishment they crave.</p>
+                    </div>
+                    <div class="options">
+                        <button class="gardeningNextButton">Nourish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       
+        <!--Gardening Seeds Activity-->
+        <div class="gardeningSeedsActivity">
+            <div class="gardeningSeeds">
+                <div class="patches">
+                    <div class="items">
+                        <div class="item">
+                            <img class="seed1" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="seed2" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="seed3" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                    </div>
+                    <div class="items">    
+                        <div class="item">
+                            <img class="seed4" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="seed5" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                        <div class="item">
+                            <img class="seed6" src="https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomContainer">
+                    <div class="options">
+                        <button class="gardeningSeedsNextButton" disabled="">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--Sewing Activity-->
+        <div class="sewingActivity">
+            <div class="sewing">
+                <div class="rightContainer">
+                    <div class="text">
+                        <p class="sewingText">Shukran, habibi! Your act of kindness resonates deeply. As the Quran shares in Surah Ar-Rum, 'And He gave you clothing that protects you from heat and other things, and coats of mail that protect you in your battles.'<br><br>Our Palestinian culture finds its expression in the vibrant patterns of the Keffiyeh, a symbol of solidarity, and the graceful folds of the Hijab, a testament to modesty and strength. Although my heart delights in crafting garments for my precious grandchildren, my hands often falter with the weight of time.<br><br>Would you lend a hand, gentle soul?</p>
+                    </div>
+                    <div class="options">
+                        <button class="sewingNextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Sewing Activity-->
+        <div class="sewingClothesActivity">
+            <div class="sewingClothes">
+                <div class="leftContainer">
+                    <div class="text">
+                        <p class="sewingClothesText">Double click on the sewing machine to bring forth new clothes for my little ones.</p>
+                    </div>
+                    <div class="options">
+                        <button class="sewingClothesNextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <!--Dua Invitation Page-->
+        <div class="duaInvitationPage">
+            <div class="rightContainer">
+                <div class="text">
+                    <p class="duaInvitationText">Your kindness knows no bounds, my love. In these moments when hearts converge, I humbly invite you to join me in making dua for Palestine, our beloved land. In the embrace of our traditions, dua is a cherished act, an echo of hope that reverberates across our land.<br><br>As the Quran reminds us in Surah Al-Baqarah, 'Allah does not burden a soul beyond that it can bear' [Quran, 2:286]. Our land, our people, we hold them dear in our hearts, and in our prayers, we seek peace and justice.<br><br>Will you join me in this heartfelt prayer?</p>
+                </div>
+                <div class="options">
+                    <button class="duaInvitationYesButton">Yes</button>
+                    <button class="duaInvitationNoButton">No</button>
+                    <button class="duaInvitationYesNextButton">Next</button>
+                    <button class="duaInvitationNoNextButton">Next</button>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Dua Page Section-->
+        <div class="duaPage">
+            <div class="dua">
+                <div class="middleContainer">
+                    <div class="text">
+                        <p class="duaPageText">اللهم ألهم أهل فلسطين القوة والصبر، وارزقهم السلام والأمان. احفظهم من كل سوء وانصرهم على الظلم. اللهم اجعل السلام يعم الأرض وأرنا فيها العدل والإنصاف. آمين.<br><br>O Allah, grant the people of Palestine strength and patience. Bestow upon them peace and security. Protect them from all harm and grant them victory over oppression. O Allah, spread peace on Earth and show us justice and fairness. Ameen.</p>
+                    </div>
+                    <div class="options">
+                        <button class="duaNextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!--Game Closing Page Section-->
+        <div class="closingPage">
+            <div class="closing">
+                <div class="topRightContainer">
+                    <h1>Sitti's Hearth: <span style="color: darkviolet;">A Palestinian Tale</span></h1>
+                    <div class="text">
+                        <p class="closingText">I extend my gratitude, with a heart brimming in warmth.<br><br>As the Quran beautifully reminds us in Surah Al-An'am, 'Not a leaf falls but that He knows it' [Quran, 6:59].</p>
+                    </div>
+                    <iframe class="video" src="https://www.youtube.com/embed/KQsHc0SMhfs?si=CBOOBkrrY2h4XhmV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <div class="options">
+                        <button class="replayButton">Replay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+<script>
+/*__POPCODESTART__*/
+$(".landingPage_About").hide();
+$(".landingPage_Credits").hide();
+$(".landingPage_Play").hide();
+$(".lampActivity").hide();
+$(".homePage").hide();
+$(".cookingPage").hide();
+$(".foodActivity").hide();
+$(".chooseActivityPage").hide();
+$(".gardeningActivity").hide();
+$(".gardeningSeedsActivity").hide();
+$(".sewingActivity").hide();
+$(".sewingClothesActivity").hide();
+$(".duaInvitationPage").hide();
+$(".duaPage").hide();
+$(".closingPage").hide(); //User clicks play on landing page
+
+$(".playButton").click(function () {
+  $(".landingPage").hide();
+  $(".landingPage_Play").show();
+  $(".landingYesButton").show();
+  $(".landingNoButton").show();
+  $(".replayButton").hide();
+}); //User clicks about on landing page
+
+$(".aboutButton").click(function () {
+  $(".landing").hide();
+  $(".landingPage_About").show();
+}); //User clicks credits on landing page
+
+$(".creditsButton").click(function () {
+  $(".landing").hide();
+  $(".landingPage_Credits").show();
+}); //User clicks back on landing page
+
+$(".landingBackButton").click(function () {
+  $(".landingPage_About").hide();
+  $(".landingPage_Credits").hide();
+  $(".landing").show();
+}); //User clicks yes on landing Sitti page
+
+$(".landingYesButton").click(function () {
+  $(".landingPage_Play").hide();
+  $(".homePage").show();
+}); //User clicks no on landing Sitti page
+
+$(".landingNoButton").click(function () {
+  $(".landingPage_Play").show();
+  $(".landingSitti").html("That's alright, dear one. Your presence alone is a gift, and your comfort in our home brings joy. Remember, as the olive tree stands resilient in our land, so does your spirit within our hearts.<br><br>Should you ever choose to engage, the door to our traditions remains open to you.");
+  $(".landingYesButton").hide();
+  $(".landingNoButton").hide();
+  $(".replayButton").show();
+}); //User clicks next on home page
+
+$(".homeNextButton").click(function () {
+  $(".homePage").hide();
+  $(".lampActivity").show();
+  $(".options").hide();
+}); //User double clicks lamp on lamp activity page
+
+$(".lampActivity").dblclick(function () {
+  $(".lampActivity").css("background-image", "url(https://static.vecteezy.com/system/resources/previews/023/636/556/original/ramadan-kareem-greeting-card-poster-and-banner-design-single-continuous-line-drawing-of-islamic-ornament-quran-kitab-tasbih-and-lantern-lamp-muslim-festival-one-line-draw-illustration-png.png)");
+  $(".lampText").html("Shukran! Your gesture brings light to this dwelling and to my heart. In our culture, lanterns symbolize the guiding light, a beacon of hope amidst darkness, much like the words of the Quran illuminate our souls. As it is written in Surah An-Nur [24:35]: 'Allah is the Light of the heavens and the earth.'<br><br>Your kindness mirrors the generosity of our Palestinian spirit, reminiscent of the endless stars that grace our skies.");
+  $(".options").show();
+}); //User clicks next on lamp activity
+
+$(".lampNextButton").click(function () {
+  $(".lampActivity").hide();
+  $(".cookingPage").show();
+}); //User clicks next on home page
+
+$(".cookingNextButton").click(function () {
+  $(".cookingPage").hide();
+  $(".foodActivity").show();
+}); //User hovers over food images
+
+var _loop = function _loop(i) {
+  $(".item".concat(i)).hover(function () {
+    $(".item".concat(i)).css("opacity", "0%");
+  });
+};
+
+for (var i = 1; i <= 6; i++) {
+  _loop(i);
+} //Initially disable the Next button on food activity
+
+
+$(".foodNextButton").prop("disabled", true); //Track whether each image is hovered
+
+var hoveredImages = {
+  item1: false,
+  item2: false,
+  item3: false,
+  item4: false,
+  item5: false,
+  item6: false
+}; //Function to check if all images are hovered
+
+function checkAllImagesHovered() {
+  for (var img in hoveredImages) {
+    if (!hoveredImages[img]) {
+      return false; //At least one image isn't hovered yet
+    }
+  }
+
+  return true; //All images are hovered
+} //Event listener for image hover
+
+
+$(".item1, .item2, .item3, .item4, .item5, .item6").hover(function () {
+  var imageClass = $(this).attr("class");
+  hoveredImages[imageClass] = true; //Check if all images are hovered
+
+  var allImagesHovered = checkAllImagesHovered(); //Enable Next button if all images are hovered
+
+  if (allImagesHovered) {
+    $(".foodNextButton").prop("disabled", false);
+  }
+}); //User clicks next on food activity
+
+$(".foodNextButton").click(function () {
+  $(".foodActivity").hide();
+  $(".chooseActivityPage").show();
+  $(".leftContainer").css("width", "20%");
+  $(".rightContainer").css("width", "20%");
+}); //User clicks gardening on choose activity page
+
+$(".chooseGardeningButton").click(function () {
+  $(".chooseActivityPage").hide();
+  $(".gardeningActivity").show();
+  $(".leftContainer").css("width", "40%");
+}); //User clicks next on gardening activity
+
+$(".gardeningNextButton").click(function () {
+  $(".gardeningActivity").hide();
+  $(".gardeningSeedsActivity").show();
+}); //User mouseleaves seed images
+
+for (var _i = 1; _i <= 6; _i++) {
+  $(".seed".concat(_i)).on('mouseleave', function () {
+    $(this).attr("src", "https://static.vecteezy.com/system/resources/previews/026/980/823/original/one-single-line-drawing-of-natural-green-organic-plantation-for-farming-logo-identity-plant-bud-ecology-icon-concept-from-growth-leaf-shape-trendy-continuous-line-draw-design-illustration-png.png").css("width", "150px");
+  });
+} //Initially disable the Next button on gardening seeds activity
+
+
+$(".gardeningSeedsNextButton").prop("disabled", true); //Track whether each seed image is mouse leaved
+
+var mouseLeavedSeeds = {
+  seed1: false,
+  seed2: false,
+  seed3: false,
+  seed4: false,
+  seed5: false,
+  seed6: false
+}; //Function to check if all seed images are mouseleaved
+
+function checkAllSeedsMouseLeaved() {
+  for (var seed in mouseLeavedSeeds) {
+    if (!mouseLeavedSeeds[seed]) {
+      return false; //At least one seed isn't mouse leaved yet
+    }
+  }
+
+  return true; //All seeds are mouse leaved
+} //Event listener for mouse leave on seed images
+
+
+$(".seed1, .seed2, .seed3, .seed4, .seed5, .seed6").mouseleave(function () {
+  var seedClass = $(this).attr("class");
+  mouseLeavedSeeds[seedClass] = true; //Check if all seeds are mouse leaved
+
+  var allSeedsMouseLeaved = checkAllSeedsMouseLeaved(); //Enable Next button if all seeds are mouse leaved
+
+  if (allSeedsMouseLeaved) {
+    $(".gardeningSeedsNextButton").prop("disabled", false);
+  }
+}); //User clicks next on garden seeds activity
+
+$(".gardeningSeedsNextButton").click(function () {
+  $(".gardeningSeedsActivity").hide();
+  $(".rightContainer").css("width", "40%");
+  $(".duaInvitationPage").show();
+  $(".duaInvitationYesNextButton").hide();
+  $(".duaInvitationNoNextButton").hide();
+}); //User clicks sewing on choose activity page
+
+$(".chooseSewingButton").click(function () {
+  $(".chooseActivityPage").hide();
+  $(".sewingActivity").show();
+  $(".rightContainer").css("width", "40%");
+}); //User clicks next on sewing activity page
+
+$(".sewingNextButton").click(function () {
+  $(".sewingActivity").hide();
+  $(".sewingClothesActivity").show();
+  $(".leftContainer").css("width", "20%");
+  $(".options").hide();
+}); //User double clicks sewing machine on sewing clothes activity page
+
+$(".sewingClothesActivity").dblclick(function () {
+  $(".sewingClothesActivity").css("background-image", "url(https://static.vecteezy.com/system/resources/previews/026/983/400/original/one-single-line-drawing-of-young-happy-muslim-male-and-female-couple-give-thumb-up-gesture-saudi-arabia-cloth-shmag-kandora-headscarf-thobe-ghutra-continuous-line-draw-design-illustration-png.png)");
+  $(".sewingClothesText").html("Celestial blessings upon you, dear one! The Quran teaches us, 'And be good to parents, relatives, orphans, the needy, neighbors who are near, neighbors who are strangers, the friend by your side, the traveler, and those whom your right hands possess.'<br><br>You've lent your hands to such a rewarding task. I mean just look at the joy adorned on the faces of my beautiful grandchildren. Their laughter echoes through our village, and in clothing woven with care, love finds its finest expression.");
+  $(".options").show();
+}); //User clicks next on sewing clothes activity page
+
+$(".sewingClothesNextButton").click(function () {
+  $(".sewingClothesActivity").hide();
+  $(".leftContainer").css("width", "40%");
+  $(".duaInvitationPage").show();
+  $(".duaInvitationYesNextButton").hide();
+  $(".duaInvitationNoNextButton").hide();
+}); //User clicks yes on dua invitation page
+
+$(".duaInvitationYesButton").click(function () {
+  $(".duaInvitationPage").hide();
+  $(".duaPage").show();
+}); //User clicks no on dua invitation page
+
+$(".duaInvitationNoButton").click(function () {
+  $(".duaInvitationPage").show();
+  $(".duaInvitationText").html("In our land, the art of dua is more than words; it's an embrace of hope, whispered in every olive grove and woven into the fabric of our embroidered throbes. From the aroma of fresh za'atar mingling with olive oil to the melodies of the oud under starlit skies, our traditions speak of endurance and unity.<br><br>Your heart is kind, dear one. Your willingness to immerse yourself in our traditions, even in small ways, speaks volumes. After all, intentions resound in the chamber of our hearts.<br><br>May the spirit of sumood that defines us, echo through your endeavors. The Quran reminds us in Surah Al-Baqarah, 'A kind word and forgiveness are better than charity followed by injury' [Quran, 2:263].<br><br>Even if your words don't find their way into the skies, your open heart resonates with the spirit of empathy and understanding.");
+  $(".duaInvitationYesButton").hide();
+  $(".duaInvitationNoButton").hide();
+  $(".duaInvitationNoNextButton").show();
+}); //User clicks next after yes on dua invitation page
+
+$(".duaInvitationYesNextButton").click(function () {
+  $(".duaInvitationPage").hide();
+  $(".duaPage").show();
+}); //User clicks next after no on dua invitation page
+
+$(".duaInvitationNoNextButton").click(function () {
+  $(".duaInvitationPage").hide();
+  $(".closingPage").show();
+  $(".replayButton").show();
+}); //User clicks next on dua page
+
+$(".duaNextButton").click(function () {
+  $(".duaPage").hide();
+  $(".closingPage").show();
+  $(".replayButton").show();
+}); //Function to reset the game
+
+function resetGame() {
+  $(".landingPage").show();
+  $(".landingPage_About").hide();
+  $(".landingPage_Credits").hide();
+  $(".landingPage_Play").hide();
+  $(".landingSitti").html("Ahlan wa sahlan! I am Sitti, a Palestinian grandmother from the village of Dimra. The rhythms of our lives here are woven with stories passed down through generations. Here, in the humble embrace of Dimra, I invite you to join me on a journey through our cherished ways.<br><br>Would you join me in embracing our traditions and lending a hand with daily chores, dear friend?");
+  $(".lampActivity").hide();
+  $(".lampActivity").css("background-image", "url(https://i.postimg.cc/2yF6VSdF/lamp-No-Color-Photo-Room-png-Photo-Room.png)");
+  $(".lampText").html("Dear one, as the sun sets upon our beloved Dimra, my humble adobe dims with the fading light. Would you kindly assist me in illuminating our surroundings? Look to the lantern resting on the table; it awaits your touch, just as the spirit of our ancestors beckons for unity and radiance.<br><br>Double-click on the lantern nearby; it holds the secret to our guiding light.");
+  $(".homePage").hide();
+  $(".cookingPage").hide();
+  $(".foodActivity").hide();
+  $(".item1, .item2, .item3, .item4, .item5, .item6").css("opacity", "100%");
+  $(".chooseActivityPage").hide();
+  $(".gardeningActivity").hide();
+  $(".gardeningSeedsActivity").hide();
+  $(".seed1, .seed2, .seed3, .seed4, .seed5, .seed6").attr("src", "https://static.vecteezy.com/system/resources/thumbnails/022/619/364/small_2x/one-continuous-line-drawing-of-whole-healthy-organic-almonds-group-for-garden-logo-identity-fresh-edible-seed-concept-for-fruit-icon-modern-single-line-draw-design-graphic-vector-illustration-png.png");
+  $(".seed1, .seed2, .seed3, .seed4, .seed5, .seed6").css("width", "250px");
+  $(".sewingActivity").hide();
+  $(".sewingClothesActivity").hide();
+  $(".sewingClothesActivity").css("background-image", "url(https://i.postimg.cc/LXZ98Xsh/sewing-Machine.jpg)");
+  $(".sewingClothesText").html("Double click on the sewing machine to bring forth new clothes for my little ones.");
+  $(".duaInvitationPage").hide();
+  $(".duaInvitationText").html("Your kindness knows no bounds, my love. In these moments when hearts converge, I humbly invite you to join me in making dua for Palestine, our beloved land. In the embrace of our traditions, dua is a cherished act, an echo of hope that reverberates across our land.<br><br>As the Quran reminds us in Surah Al-Baqarah, 'Allah does not burden a soul beyond that it can bear' [Quran, 2:286]. Our land, our people, we hold them dear in our hearts, and in our prayers, we seek peace and justice.<br><br>Will you join me in this heartfelt prayer?");
+  $(".duaInvitationYesButton").show();
+  $(".duaInvitationNoButton").show();
+  $(".duaInvitationYesNextButton").hide();
+  $(".duaInvitationNoNextButton").hide();
+  $(".duaPage").hide();
+  $(".closingPage").hide();
+} //User clicks replay
+
+
+$(".replayButton").click(function () {
+  resetGame();
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJoaWRlIiwiY2xpY2siLCJzaG93IiwiaHRtbCIsImRibGNsaWNrIiwiY3NzIiwiaSIsImhvdmVyIiwicHJvcCIsImhvdmVyZWRJbWFnZXMiLCJpdGVtMSIsIml0ZW0yIiwiaXRlbTMiLCJpdGVtNCIsIml0ZW01IiwiaXRlbTYiLCJjaGVja0FsbEltYWdlc0hvdmVyZWQiLCJpbWciLCJpbWFnZUNsYXNzIiwiYXR0ciIsImFsbEltYWdlc0hvdmVyZWQiLCJvbiIsIm1vdXNlTGVhdmVkU2VlZHMiLCJzZWVkMSIsInNlZWQyIiwic2VlZDMiLCJzZWVkNCIsInNlZWQ1Iiwic2VlZDYiLCJjaGVja0FsbFNlZWRzTW91c2VMZWF2ZWQiLCJzZWVkIiwibW91c2VsZWF2ZSIsInNlZWRDbGFzcyIsImFsbFNlZWRzTW91c2VMZWF2ZWQiLCJyZXNldEdhbWUiXSwibWFwcGluZ3MiOiJBQUFBQSxDQUFDLENBQUMsb0JBQUQsQ0FBRCxDQUF3QkMsSUFBeEI7QUFDQUQsQ0FBQyxDQUFDLHNCQUFELENBQUQsQ0FBMEJDLElBQTFCO0FBQ0FELENBQUMsQ0FBQyxtQkFBRCxDQUFELENBQXVCQyxJQUF2QjtBQUNBRCxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CQyxJQUFuQjtBQUNBRCxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVDLElBQWY7QUFDQUQsQ0FBQyxDQUFDLGNBQUQsQ0FBRCxDQUFrQkMsSUFBbEI7QUFDQUQsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkMsSUFBbkI7QUFDQUQsQ0FBQyxDQUFDLHFCQUFELENBQUQsQ0FBeUJDLElBQXpCO0FBQ0FELENBQUMsQ0FBQyxvQkFBRCxDQUFELENBQXdCQyxJQUF4QjtBQUNBRCxDQUFDLENBQUMseUJBQUQsQ0FBRCxDQUE2QkMsSUFBN0I7QUFDQUQsQ0FBQyxDQUFDLGlCQUFELENBQUQsQ0FBcUJDLElBQXJCO0FBQ0FELENBQUMsQ0FBQyx3QkFBRCxDQUFELENBQTRC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QkMsSUFBbEI7QUFDSCxDLENBR0Q7OztBQUNBRCxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CRSxLQUFuQixDQUF5QixZQUFXO0FBQ2hDaUMsRUFBQUEsU0FBUztBQUNaLENBRkQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLmxhbmRpbmdQYWdlX0Fib3V0XCIpLmhpZGUoKTtcbiQoXCIubGFuZGluZ1BhZ2VfQ3JlZGl0c1wiKS5oaWRlKCk7XG4kKFwiLmxhbmRpbmdQYWdlX1BsYXlcIikuaGlkZSgpO1xuJChcIi5sYW1wQWN0aXZpdHlcIikuaGlkZSgpO1xuJChcIi5ob21lUGFnZVwiKS5oaWRlKCk7XG4kKFwiLmNvb2tpbmdQYWdlXCIpLmhpZGUoKTtcbiQoXCIuZm9vZEFjdGl2aXR5XCIpLmhpZGUoKTtcbiQoXCIuY2hvb3NlQWN0aXZpdHlQYWdlXCIpLmhpZGUoKTtcbiQoXCIuZ2FyZGVuaW5nQWN0aXZpdHlcIikuaGlkZSgpO1xuJChcIi5nYXJkZW5pbmdTZWVkc0FjdGl2aXR5XCIpLmhpZGUoKTtcbiQoXCIuc2V3aW5nQWN0aXZpdHlcIikuaGlkZSgpO1xuJChcIi5zZXdpbmdDbG90aGVzQWN0aXZpdHlcIikuaGlkZSgpO1xuJChcIi5kdWFJbnZpdGF0aW9uUGFnZVwiKS5oaWRlKCk7XG4kKFwiLmR1YVBhZ2VcIikuaGlkZSgpO1xuJChcIi5jbG9zaW5nUGFnZVwiKS5oaWRlKCk7XG5cblxuLy9Vc2VyIGNsaWNrcyBwbGF5IG9uIGxhbmRpbmcgcGFnZVxuJChcIi5wbGF5QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIubGFuZGluZ1BhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIubGFuZGluZ1BhZ2VfUGxheVwiKS5zaG93KCk7XG4gICAgJChcIi5sYW5kaW5nWWVzQnV0dG9uXCIpLnNob3coKTtcbiAgICAkKFwiLmxhbmRpbmdOb0J1dHRvblwiKS5zaG93KCk7XG4gICAgJChcIi5yZXBsYXlCdXR0b25cIikuaGlkZSgpO1xufSk7XG5cblxuLy9Vc2VyIGNsaWNrcyBhYm91dCBvbiBsYW5kaW5nIHBhZ2VcbiQoXCIuYWJvdXRCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5sYW5kaW5nXCIpLmhpZGUoKTtcbiAgICAkKFwiLmxhbmRpbmdQYWdlX0Fib3V0XCIpLnNob3coKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgY3JlZGl0cyBvbiBsYW5kaW5nIHBhZ2VcbiQoXCIuY3JlZGl0c0J1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmxhbmRpbmdcIikuaGlkZSgpO1xuICAgICQoXCIubGFuZGluZ1BhZ2VfQ3JlZGl0c1wiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIGJhY2sgb24gbGFuZGluZyBwYWdlXG4kKFwiLmxhbmRpbmdCYWNrQnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIubGFuZGluZ1BhZ2VfQWJvdXRcIikuaGlkZSgpO1xuICAgICQoXCIubGFuZGluZ1BhZ2VfQ3JlZGl0c1wiKS5oaWRlKCk7XG4gICAgJChcIi5sYW5kaW5nXCIpLnNob3coKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgeWVzIG9uIGxhbmRpbmcgU2l0dGkgcGFnZVxuJChcIi5sYW5kaW5nWWVzQnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIubGFuZGluZ1BhZ2VfUGxheVwiKS5oaWRlKCk7XG4gICAgJChcIi5ob21lUGFnZVwiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5vIG9uIGxhbmRpbmcgU2l0dGkgcGFnZVxuJChcIi5sYW5kaW5nTm9CdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5sYW5kaW5nUGFnZV9QbGF5XCIpLnNob3coKTtcbiAgICAkKFwiLmxhbmRpbmdTaXR0aVwiKS5odG1sKFwiVGhhdCdzIGFscmlnaHQsIGRlYXIgb25lLiBZb3VyIHByZXNlbmNlIGFsb25lIGlzIGEgZ2lmdCwgYW5kIHlvdXIgY29tZm9ydCBpbiBvdXIgaG9tZSBicmluZ3Mgam95LiBSZW1lbWJlciwgYXMgdGhlIG9saXZlIHRyZWUgc3RhbmRzIHJlc2lsaWVudCBpbiBvdXIgbGFuZCwgc28gZG9lcyB5b3VyIHNwaXJpdCB3aXRoaW4gb3VyIGhlYXJ0cy48YnI+PGJyPlNob3VsZCB5b3UgZXZlciBjaG9vc2UgdG8gZW5nYWdlLCB0aGUgZG9vciB0byBvdXIgdHJhZGl0aW9ucyByZW1haW5zIG9wZW4gdG8geW91LlwiKTtcbiAgICAkKFwiLmxhbmRpbmdZZXNCdXR0b25cIikuaGlkZSgpO1xuICAgICQoXCIubGFuZGluZ05vQnV0dG9uXCIpLmhpZGUoKTtcbiAgICAkKFwiLnJlcGxheUJ1dHRvblwiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5leHQgb24gaG9tZSBwYWdlXG4kKFwiLmhvbWVOZXh0QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuaG9tZVBhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIubGFtcEFjdGl2aXR5XCIpLnNob3coKTtcbiAgICAkKFwiLm9wdGlvbnNcIikuaGlkZSgpO1xufSk7XG5cblxuLy9Vc2VyIGRvdWJsZSBjbGlja3MgbGFtcCBvbiBsYW1wIGFjdGl2aXR5IHBhZ2VcbiQoXCIubGFtcEFjdGl2aXR5XCIpLmRibGNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIubGFtcEFjdGl2aXR5XCIpLmNzcyhcImJhY2tncm91bmQtaW1hZ2VcIiwgXCJ1cmwoaHR0cHM6Ly9zdGF0aWMudmVjdGVlenkuY29tL3N5c3RlbS9yZXNvdXJjZXMvcHJldmlld3MvMDIzLzYzNi81NTYvb3JpZ2luYWwvcmFtYWRhbi1rYXJlZW0tZ3JlZXRpbmctY2FyZC1wb3N0ZXItYW5kLWJhbm5lci1kZXNpZ24tc2luZ2xlLWNvbnRpbnVvdXMtbGluZS1kcmF3aW5nLW9mLWlzbGFtaWMtb3JuYW1lbnQtcXVyYW4ta2l0YWItdGFzYmloLWFuZC1sYW50ZXJuLWxhbXAtbXVzbGltLWZlc3RpdmFsLW9uZS1saW5lLWRyYXctaWxsdXN0cmF0aW9uLXBuZy5wbmcpXCIpO1xuICAgICQoXCIubGFtcFRleHRcIikuaHRtbChcIlNodWtyYW4hIFlvdXIgZ2VzdHVyZSBicmluZ3MgbGlnaHQgdG8gdGhpcyBkd2VsbGluZyBhbmQgdG8gbXkgaGVhcnQuIEluIG91ciBjdWx0dXJlLCBsYW50ZXJucyBzeW1ib2xpemUgdGhlIGd1aWRpbmcgbGlnaHQsIGEgYmVhY29uIG9mIGhvcGUgYW1pZHN0IGRhcmtuZXNzLCBtdWNoIGxpa2UgdGhlIHdvcmRzIG9mIHRoZSBRdXJhbiBpbGx1bWluYXRlIG91ciBzb3Vscy4gQXMgaXQgaXMgd3JpdHRlbiBpbiBTdXJhaCBBbi1OdXIgWzI0OjM1XTogJ0FsbGFoIGlzIHRoZSBMaWdodCBvZiB0aGUgaGVhdmVucyBhbmQgdGhlIGVhcnRoLic8YnI+PGJyPllvdXIga2luZG5lc3MgbWlycm9ycyB0aGUgZ2VuZXJvc2l0eSBvZiBvdXIgUGFsZXN0aW5pYW4gc3Bpcml0LCByZW1pbmlzY2VudCBvZiB0aGUgZW5kbGVzcyBzdGFycyB0aGF0IGdyYWNlIG91ciBza2llcy5cIik7XG4gICAgJChcIi5vcHRpb25zXCIpLnNob3coKTtcbn0pOyBcblxuXG4vL1VzZXIgY2xpY2tzIG5leHQgb24gbGFtcCBhY3Rpdml0eVxuJChcIi5sYW1wTmV4dEJ1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmxhbXBBY3Rpdml0eVwiKS5oaWRlKCk7XG4gICAgJChcIi5jb29raW5nUGFnZVwiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5leHQgb24gaG9tZSBwYWdlXG4kKFwiLmNvb2tpbmdOZXh0QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuY29va2luZ1BhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIuZm9vZEFjdGl2aXR5XCIpLnNob3coKTtcbn0pO1xuXG5cbi8vVXNlciBob3ZlcnMgb3ZlciBmb29kIGltYWdlc1xuZm9yIChsZXQgaSA9IDE7IGkgPD0gNjsgaSsrKSB7XG4gICAgJChgLml0ZW0ke2l9YCkuaG92ZXIoZnVuY3Rpb24oKSB7XG4gICAgICAgICQoYC5pdGVtJHtpfWApLmNzcyhcIm9wYWNpdHlcIiwgXCIwJVwiKTtcbiAgXHR9KTtcbn1cblxuXG4vL0luaXRpYWxseSBkaXNhYmxlIHRoZSBOZXh0IGJ1dHRvbiBvbiBmb29kIGFjdGl2aXR5XG4kKFwiLmZvb2ROZXh0QnV0dG9uXCIpLnByb3AoXCJkaXNhYmxlZFwiLCB0cnVlKTtcblxuLy9UcmFjayB3aGV0aGVyIGVhY2ggaW1hZ2UgaXMgaG92ZXJlZFxubGV0IGhvdmVyZWRJbWFnZXMgPSB7XG4gICAgaXRlbTE6IGZhbHNlLFxuICAgIGl0ZW0yOiBmYWxzZSxcbiAgICBpdGVtMzogZmFsc2UsXG4gICAgaXRlbTQ6IGZhbHNlLFxuICAgIGl0ZW01OiBmYWxzZSxcbiAgICBpdGVtNjogZmFsc2Vcbn07XG5cbi8vRnVuY3Rpb24gdG8gY2hlY2sgaWYgYWxsIGltYWdlcyBhcmUgaG92ZXJlZFxuZnVuY3Rpb24gY2hlY2tBbGxJbWFnZXNIb3ZlcmVkKCkge1xuICAgIGZvciAobGV0IGltZyBpbiBob3ZlcmVkSW1hZ2VzKSB7XG4gICAgICAgIGlmICghaG92ZXJlZEltYWdlc1tpbWddKSB7XG4gICAgICAgICAgICByZXR1cm4gZmFsc2U7IC8vQXQgbGVhc3Qgb25lIGltYWdlIGlzbid0IGhvdmVyZWQgeWV0XG4gICAgICAgIH1cbiAgICB9XG4gICAgcmV0dXJuIHRydWU7IC8vQWxsIGltYWdlcyBhcmUgaG92ZXJlZFxufVxuXG4vL0V2ZW50IGxpc3RlbmVyIGZvciBpbWFnZSBob3ZlclxuJChcIi5pdGVtMSwgLml0ZW0yLCAuaXRlbTMsIC5pdGVtNCwgLml0ZW01LCAuaXRlbTZcIikuaG92ZXIoZnVuY3Rpb24oKSB7XG4gICAgY29uc3QgaW1hZ2VDbGFzcyA9ICQodGhpcykuYXR0cihcImNsYXNzXCIpO1xuICAgIGhvdmVyZWRJbWFnZXNbaW1hZ2VDbGFzc10gPSB0cnVlO1xuICAgIC8vQ2hlY2sgaWYgYWxsIGltYWdlcyBhcmUgaG92ZXJlZFxuICAgIGNvbnN0IGFsbEltYWdlc0hvdmVyZWQgPSBjaGVja0FsbEltYWdlc0hvdmVyZWQoKTtcbiAgICAvL0VuYWJsZSBOZXh0IGJ1dHRvbiBpZiBhbGwgaW1hZ2VzIGFyZSBob3ZlcmVkXG4gICAgaWYgKGFsbEltYWdlc0hvdmVyZWQpIHtcbiAgICAgICAgJChcIi5mb29kTmV4dEJ1dHRvblwiKS5wcm9wKFwiZGlzYWJsZWRcIiwgZmFsc2UpO1xuICAgIH1cbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgbmV4dCBvbiBmb29kIGFjdGl2aXR5XG4kKFwiLmZvb2ROZXh0QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuZm9vZEFjdGl2aXR5XCIpLmhpZGUoKTtcbiAgICAkKFwiLmNob29zZUFjdGl2aXR5UGFnZVwiKS5zaG93KCk7XG4gICAgJChcIi5sZWZ0Q29udGFpbmVyXCIpLmNzcyhcIndpZHRoXCIsIFwiMjAlXCIpO1xuICAgICQoXCIucmlnaHRDb250YWluZXJcIikuY3NzKFwid2lkdGhcIiwgXCIyMCVcIik7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIGdhcmRlbmluZyBvbiBjaG9vc2UgYWN0aXZpdHkgcGFnZVxuJChcIi5jaG9vc2VHYXJkZW5pbmdCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5jaG9vc2VBY3Rpdml0eVBhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIuZ2FyZGVuaW5nQWN0aXZpdHlcIikuc2hvdygpO1xuICAgICQoXCIubGVmdENvbnRhaW5lclwiKS5jc3MoXCJ3aWR0aFwiLCBcIjQwJVwiKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgbmV4dCBvbiBnYXJkZW5pbmcgYWN0aXZpdHlcbiQoXCIuZ2FyZGVuaW5nTmV4dEJ1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmdhcmRlbmluZ0FjdGl2aXR5XCIpLmhpZGUoKTtcbiAgICAkKFwiLmdhcmRlbmluZ1NlZWRzQWN0aXZpdHlcIikuc2hvdygpO1xufSk7XG5cblxuLy9Vc2VyIG1vdXNlbGVhdmVzIHNlZWQgaW1hZ2VzXG5mb3IgKGxldCBpID0gMTsgaSA8PSA2OyBpKyspIHtcbiAgICAkKGAuc2VlZCR7aX1gKS5vbignbW91c2VsZWF2ZScsIGZ1bmN0aW9uKCkge1xuICAgICAgICAkKHRoaXMpLmF0dHIoXCJzcmNcIiwgXCJodHRwczovL3N0YXRpYy52ZWN0ZWV6eS5jb20vc3lzdGVtL3Jlc291cmNlcy9wcmV2aWV3cy8wMjYvOTgwLzgyMy9vcmlnaW5hbC9vbmUtc2luZ2xlLWxpbmUtZHJhd2luZy1vZi1uYXR1cmFsLWdyZWVuLW9yZ2FuaWMtcGxhbnRhdGlvbi1mb3ItZmFybWluZy1sb2dvLWlkZW50aXR5LXBsYW50LWJ1ZC1lY29sb2d5LWljb24tY29uY2VwdC1mcm9tLWdyb3d0aC1sZWFmLXNoYXBlLXRyZW5keS1jb250aW51b3VzLWxpbmUtZHJhdy1kZXNpZ24taWxsdXN0cmF0aW9uLXBuZy5wbmdcIilcbiAgICAgICAgICAgICAgIC5jc3MoXCJ3aWR0aFwiLCBcIjE1MHB4XCIpO1xuICAgIH0pO1xufVxuXG5cbi8vSW5pdGlhbGx5IGRpc2FibGUgdGhlIE5leHQgYnV0dG9uIG9uIGdhcmRlbmluZyBzZWVkcyBhY3Rpdml0eVxuJChcIi5nYXJkZW5pbmdTZWVkc05leHRCdXR0b25cIikucHJvcChcImRpc2FibGVkXCIsIHRydWUpO1xuXG4vL1RyYWNrIHdoZXRoZXIgZWFjaCBzZWVkIGltYWdlIGlzIG1vdXNlIGxlYXZlZFxubGV0IG1vdXNlTGVhdmVkU2VlZHMgPSB7XG4gICAgc2VlZDE6IGZhbHNlLFxuICAgIHNlZWQyOiBmYWxzZSxcbiAgICBzZWVkMzogZmFsc2UsXG4gICAgc2VlZDQ6IGZhbHNlLFxuICAgIHNlZWQ1OiBmYWxzZSxcbiAgICBzZWVkNjogZmFsc2Vcbn07XG5cbi8vRnVuY3Rpb24gdG8gY2hlY2sgaWYgYWxsIHNlZWQgaW1hZ2VzIGFyZSBtb3VzZWxlYXZlZFxuZnVuY3Rpb24gY2hlY2tBbGxTZWVkc01vdXNlTGVhdmVkKCkge1xuICAgIGZvciAobGV0IHNlZWQgaW4gbW91c2VMZWF2ZWRTZWVkcykge1xuICAgICAgICBpZiAoIW1vdXNlTGVhdmVkU2VlZHNbc2VlZF0pIHtcbiAgICAgICAgICAgIHJldHVybiBmYWxzZTsgLy9BdCBsZWFzdCBvbmUgc2VlZCBpc24ndCBtb3VzZSBsZWF2ZWQgeWV0XG4gICAgICAgIH1cbiAgICB9XG4gICAgcmV0dXJuIHRydWU7IC8vQWxsIHNlZWRzIGFyZSBtb3VzZSBsZWF2ZWRcbn1cblxuLy9FdmVudCBsaXN0ZW5lciBmb3IgbW91c2UgbGVhdmUgb24gc2VlZCBpbWFnZXNcbiQoXCIuc2VlZDEsIC5zZWVkMiwgLnNlZWQzLCAuc2VlZDQsIC5zZWVkNSwgLnNlZWQ2XCIpLm1vdXNlbGVhdmUoZnVuY3Rpb24oKSB7XG4gICAgY29uc3Qgc2VlZENsYXNzID0gJCh0aGlzKS5hdHRyKFwiY2xhc3NcIik7XG4gICAgbW91c2VMZWF2ZWRTZWVkc1tzZWVkQ2xhc3NdID0gdHJ1ZTtcbiAgICAvL0NoZWNrIGlmIGFsbCBzZWVkcyBhcmUgbW91c2UgbGVhdmVkXG4gICAgY29uc3QgYWxsU2VlZHNNb3VzZUxlYXZlZCA9IGNoZWNrQWxsU2VlZHNNb3VzZUxlYXZlZCgpO1xuICAgIC8vRW5hYmxlIE5leHQgYnV0dG9uIGlmIGFsbCBzZWVkcyBhcmUgbW91c2UgbGVhdmVkXG4gICAgaWYgKGFsbFNlZWRzTW91c2VMZWF2ZWQpIHtcbiAgICAgICAgJChcIi5nYXJkZW5pbmdTZWVkc05leHRCdXR0b25cIikucHJvcChcImRpc2FibGVkXCIsIGZhbHNlKTtcbiAgICB9XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5leHQgb24gZ2FyZGVuIHNlZWRzIGFjdGl2aXR5XG4kKFwiLmdhcmRlbmluZ1NlZWRzTmV4dEJ1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmdhcmRlbmluZ1NlZWRzQWN0aXZpdHlcIikuaGlkZSgpO1xuICAgICQoXCIucmlnaHRDb250YWluZXJcIikuY3NzKFwid2lkdGhcIiwgXCI0MCVcIik7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uUGFnZVwiKS5zaG93KCk7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uWWVzTmV4dEJ1dHRvblwiKS5oaWRlKCk7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uTm9OZXh0QnV0dG9uXCIpLmhpZGUoKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3Mgc2V3aW5nIG9uIGNob29zZSBhY3Rpdml0eSBwYWdlXG4kKFwiLmNob29zZVNld2luZ0J1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmNob29zZUFjdGl2aXR5UGFnZVwiKS5oaWRlKCk7XG4gICAgJChcIi5zZXdpbmdBY3Rpdml0eVwiKS5zaG93KCk7XG4gICAgJChcIi5yaWdodENvbnRhaW5lclwiKS5jc3MoXCJ3aWR0aFwiLCBcIjQwJVwiKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgbmV4dCBvbiBzZXdpbmcgYWN0aXZpdHkgcGFnZVxuJChcIi5zZXdpbmdOZXh0QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuc2V3aW5nQWN0aXZpdHlcIikuaGlkZSgpO1xuICAgICQoXCIuc2V3aW5nQ2xvdGhlc0FjdGl2aXR5XCIpLnNob3coKTtcbiAgICAkKFwiLmxlZnRDb250YWluZXJcIikuY3NzKFwid2lkdGhcIiwgXCIyMCVcIik7XG4gICAgJChcIi5vcHRpb25zXCIpLmhpZGUoKTtcbn0pO1xuXG5cbi8vVXNlciBkb3VibGUgY2xpY2tzIHNld2luZyBtYWNoaW5lIG9uIHNld2luZyBjbG90aGVzIGFjdGl2aXR5IHBhZ2VcbiQoXCIuc2V3aW5nQ2xvdGhlc0FjdGl2aXR5XCIpLmRibGNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuc2V3aW5nQ2xvdGhlc0FjdGl2aXR5XCIpLmNzcyhcImJhY2tncm91bmQtaW1hZ2VcIiwgXCJ1cmwoaHR0cHM6Ly9zdGF0aWMudmVjdGVlenkuY29tL3N5c3RlbS9yZXNvdXJjZXMvcHJldmlld3MvMDI2Lzk4My80MDAvb3JpZ2luYWwvb25lLXNpbmdsZS1saW5lLWRyYXdpbmctb2YteW91bmctaGFwcHktbXVzbGltLW1hbGUtYW5kLWZlbWFsZS1jb3VwbGUtZ2l2ZS10aHVtYi11cC1nZXN0dXJlLXNhdWRpLWFyYWJpYS1jbG90aC1zaG1hZy1rYW5kb3JhLWhlYWRzY2FyZi10aG9iZS1naHV0cmEtY29udGludW91cy1saW5lLWRyYXctZGVzaWduLWlsbHVzdHJhdGlvbi1wbmcucG5nKVwiKTtcbiAgICAkKFwiLnNld2luZ0Nsb3RoZXNUZXh0XCIpLmh0bWwoXCJDZWxlc3RpYWwgYmxlc3NpbmdzIHVwb24geW91LCBkZWFyIG9uZSEgVGhlIFF1cmFuIHRlYWNoZXMgdXMsICdBbmQgYmUgZ29vZCB0byBwYXJlbnRzLCByZWxhdGl2ZXMsIG9ycGhhbnMsIHRoZSBuZWVkeSwgbmVpZ2hib3JzIHdobyBhcmUgbmVhciwgbmVpZ2hib3JzIHdobyBhcmUgc3RyYW5nZXJzLCB0aGUgZnJpZW5kIGJ5IHlvdXIgc2lkZSwgdGhlIHRyYXZlbGVyLCBhbmQgdGhvc2Ugd2hvbSB5b3VyIHJpZ2h0IGhhbmRzIHBvc3Nlc3MuJzxicj48YnI+WW91J3ZlIGxlbnQgeW91ciBoYW5kcyB0byBzdWNoIGEgcmV3YXJkaW5nIHRhc2suIEkgbWVhbiBqdXN0IGxvb2sgYXQgdGhlIGpveSBhZG9ybmVkIG9uIHRoZSBmYWNlcyBvZiBteSBiZWF1dGlmdWwgZ3JhbmRjaGlsZHJlbi4gVGhlaXIgbGF1Z2h0ZXIgZWNob2VzIHRocm91Z2ggb3VyIHZpbGxhZ2UsIGFuZCBpbiBjbG90aGluZyB3b3ZlbiB3aXRoIGNhcmUsIGxvdmUgZmluZHMgaXRzIGZpbmVzdCBleHByZXNzaW9uLlwiKTtcbiAgICAkKFwiLm9wdGlvbnNcIikuc2hvdygpO1xufSk7XG5cblxuLy9Vc2VyIGNsaWNrcyBuZXh0IG9uIHNld2luZyBjbG90aGVzIGFjdGl2aXR5IHBhZ2VcbiQoXCIuc2V3aW5nQ2xvdGhlc05leHRCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5zZXdpbmdDbG90aGVzQWN0aXZpdHlcIikuaGlkZSgpO1xuICAgICQoXCIubGVmdENvbnRhaW5lclwiKS5jc3MoXCJ3aWR0aFwiLCBcIjQwJVwiKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25QYWdlXCIpLnNob3coKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25ZZXNOZXh0QnV0dG9uXCIpLmhpZGUoKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25Ob05leHRCdXR0b25cIikuaGlkZSgpO1xufSk7XG5cblxuLy9Vc2VyIGNsaWNrcyB5ZXMgb24gZHVhIGludml0YXRpb24gcGFnZVxuJChcIi5kdWFJbnZpdGF0aW9uWWVzQnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuZHVhSW52aXRhdGlvblBhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIuZHVhUGFnZVwiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5vIG9uIGR1YSBpbnZpdGF0aW9uIHBhZ2VcbiQoXCIuZHVhSW52aXRhdGlvbk5vQnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuZHVhSW52aXRhdGlvblBhZ2VcIikuc2hvdygpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvblRleHRcIikuaHRtbChcIkluIG91ciBsYW5kLCB0aGUgYXJ0IG9mIGR1YSBpcyBtb3JlIHRoYW4gd29yZHM7IGl0J3MgYW4gZW1icmFjZSBvZiBob3BlLCB3aGlzcGVyZWQgaW4gZXZlcnkgb2xpdmUgZ3JvdmUgYW5kIHdvdmVuIGludG8gdGhlIGZhYnJpYyBvZiBvdXIgZW1icm9pZGVyZWQgdGhyb2Jlcy4gRnJvbSB0aGUgYXJvbWEgb2YgZnJlc2ggemEnYXRhciBtaW5nbGluZyB3aXRoIG9saXZlIG9pbCB0byB0aGUgbWVsb2RpZXMgb2YgdGhlIG91ZCB1bmRlciBzdGFybGl0IHNraWVzLCBvdXIgdHJhZGl0aW9ucyBzcGVhayBvZiBlbmR1cmFuY2UgYW5kIHVuaXR5Ljxicj48YnI+WW91ciBoZWFydCBpcyBraW5kLCBkZWFyIG9uZS4gWW91ciB3aWxsaW5nbmVzcyB0byBpbW1lcnNlIHlvdXJzZWxmIGluIG91ciB0cmFkaXRpb25zLCBldmVuIGluIHNtYWxsIHdheXMsIHNwZWFrcyB2b2x1bWVzLiBBZnRlciBhbGwsIGludGVudGlvbnMgcmVzb3VuZCBpbiB0aGUgY2hhbWJlciBvZiBvdXIgaGVhcnRzLjxicj48YnI+TWF5IHRoZSBzcGlyaXQgb2Ygc3Vtb29kIHRoYXQgZGVmaW5lcyB1cywgZWNobyB0aHJvdWdoIHlvdXIgZW5kZWF2b3JzLiBUaGUgUXVyYW4gcmVtaW5kcyB1cyBpbiBTdXJhaCBBbC1CYXFhcmFoLCAnQSBraW5kIHdvcmQgYW5kIGZvcmdpdmVuZXNzIGFyZSBiZXR0ZXIgdGhhbiBjaGFyaXR5IGZvbGxvd2VkIGJ5IGluanVyeScgW1F1cmFuLCAyOjI2M10uPGJyPjxicj5FdmVuIGlmIHlvdXIgd29yZHMgZG9uJ3QgZmluZCB0aGVpciB3YXkgaW50byB0aGUgc2tpZXMsIHlvdXIgb3BlbiBoZWFydCByZXNvbmF0ZXMgd2l0aCB0aGUgc3Bpcml0IG9mIGVtcGF0aHkgYW5kIHVuZGVyc3RhbmRpbmcuXCIpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvblllc0J1dHRvblwiKS5oaWRlKCk7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uTm9CdXR0b25cIikuaGlkZSgpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvbk5vTmV4dEJ1dHRvblwiKS5zaG93KCk7XG59KTtcblxuXG4vL1VzZXIgY2xpY2tzIG5leHQgYWZ0ZXIgeWVzIG9uIGR1YSBpbnZpdGF0aW9uIHBhZ2VcbiQoXCIuZHVhSW52aXRhdGlvblllc05leHRCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uUGFnZVwiKS5oaWRlKCk7XG4gICAgJChcIi5kdWFQYWdlXCIpLnNob3coKTtcbn0pO1xuXG5cbi8vVXNlciBjbGlja3MgbmV4dCBhZnRlciBubyBvbiBkdWEgaW52aXRhdGlvbiBwYWdlXG4kKFwiLmR1YUludml0YXRpb25Ob05leHRCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5kdWFJbnZpdGF0aW9uUGFnZVwiKS5oaWRlKCk7XG4gICAgJChcIi5jbG9zaW5nUGFnZVwiKS5zaG93KCk7XG4gICAgJChcIi5yZXBsYXlCdXR0b25cIikuc2hvdygpO1xufSk7XG5cblxuLy9Vc2VyIGNsaWNrcyBuZXh0IG9uIGR1YSBwYWdlXG4kKFwiLmR1YU5leHRCdXR0b25cIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5kdWFQYWdlXCIpLmhpZGUoKTtcbiAgICAkKFwiLmNsb3NpbmdQYWdlXCIpLnNob3coKTtcbiAgICAkKFwiLnJlcGxheUJ1dHRvblwiKS5zaG93KCk7XG59KTtcblxuXG4vL0Z1bmN0aW9uIHRvIHJlc2V0IHRoZSBnYW1lXG5mdW5jdGlvbiByZXNldEdhbWUoKSB7XG4gICAgJChcIi5sYW5kaW5nUGFnZVwiKS5zaG93KCk7XG4gICAgJChcIi5sYW5kaW5nUGFnZV9BYm91dFwiKS5oaWRlKCk7XG4gICAgJChcIi5sYW5kaW5nUGFnZV9DcmVkaXRzXCIpLmhpZGUoKTtcbiAgICAkKFwiLmxhbmRpbmdQYWdlX1BsYXlcIikuaGlkZSgpO1xuICAgICQoXCIubGFuZGluZ1NpdHRpXCIpLmh0bWwoXCJBaGxhbiB3YSBzYWhsYW4hIEkgYW0gU2l0dGksIGEgUGFsZXN0aW5pYW4gZ3JhbmRtb3RoZXIgZnJvbSB0aGUgdmlsbGFnZSBvZiBEaW1yYS4gVGhlIHJoeXRobXMgb2Ygb3VyIGxpdmVzIGhlcmUgYXJlIHdvdmVuIHdpdGggc3RvcmllcyBwYXNzZWQgZG93biB0aHJvdWdoIGdlbmVyYXRpb25zLiBIZXJlLCBpbiB0aGUgaHVtYmxlIGVtYnJhY2Ugb2YgRGltcmEsIEkgaW52aXRlIHlvdSB0byBqb2luIG1lIG9uIGEgam91cm5leSB0aHJvdWdoIG91ciBjaGVyaXNoZWQgd2F5cy48YnI+PGJyPldvdWxkIHlvdSBqb2luIG1lIGluIGVtYnJhY2luZyBvdXIgdHJhZGl0aW9ucyBhbmQgbGVuZGluZyBhIGhhbmQgd2l0aCBkYWlseSBjaG9yZXMsIGRlYXIgZnJpZW5kP1wiKTtcbiAgICAkKFwiLmxhbXBBY3Rpdml0eVwiKS5oaWRlKCk7XG4gICAgJChcIi5sYW1wQWN0aXZpdHlcIikuY3NzKFwiYmFja2dyb3VuZC1pbWFnZVwiLCBcInVybChodHRwczovL2kucG9zdGltZy5jYy8yeUY2VlNkRi9sYW1wLU5vLUNvbG9yLVBob3RvLVJvb20tcG5nLVBob3RvLVJvb20ucG5nKVwiKTtcbiAgICAkKFwiLmxhbXBUZXh0XCIpLmh0bWwoXCJEZWFyIG9uZSwgYXMgdGhlIHN1biBzZXRzIHVwb24gb3VyIGJlbG92ZWQgRGltcmEsIG15IGh1bWJsZSBhZG9iZSBkaW1zIHdpdGggdGhlIGZhZGluZyBsaWdodC4gV291bGQgeW91IGtpbmRseSBhc3Npc3QgbWUgaW4gaWxsdW1pbmF0aW5nIG91ciBzdXJyb3VuZGluZ3M/IExvb2sgdG8gdGhlIGxhbnRlcm4gcmVzdGluZyBvbiB0aGUgdGFibGU7IGl0IGF3YWl0cyB5b3VyIHRvdWNoLCBqdXN0IGFzIHRoZSBzcGlyaXQgb2Ygb3VyIGFuY2VzdG9ycyBiZWNrb25zIGZvciB1bml0eSBhbmQgcmFkaWFuY2UuPGJyPjxicj5Eb3VibGUtY2xpY2sgb24gdGhlIGxhbnRlcm4gbmVhcmJ5OyBpdCBob2xkcyB0aGUgc2VjcmV0IHRvIG91ciBndWlkaW5nIGxpZ2h0LlwiKTtcbiAgICAkKFwiLmhvbWVQYWdlXCIpLmhpZGUoKTtcbiAgICAkKFwiLmNvb2tpbmdQYWdlXCIpLmhpZGUoKTtcbiAgICAkKFwiLmZvb2RBY3Rpdml0eVwiKS5oaWRlKCk7XG4gICAgJChcIi5pdGVtMSwgLml0ZW0yLCAuaXRlbTMsIC5pdGVtNCwgLml0ZW01LCAuaXRlbTZcIikuY3NzKFwib3BhY2l0eVwiLCBcIjEwMCVcIik7XG4gICAgJChcIi5jaG9vc2VBY3Rpdml0eVBhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIuZ2FyZGVuaW5nQWN0aXZpdHlcIikuaGlkZSgpO1xuICAgICQoXCIuZ2FyZGVuaW5nU2VlZHNBY3Rpdml0eVwiKS5oaWRlKCk7XG4gICAgJChcIi5zZWVkMSwgLnNlZWQyLCAuc2VlZDMsIC5zZWVkNCwgLnNlZWQ1LCAuc2VlZDZcIikuYXR0cihcInNyY1wiLCBcImh0dHBzOi8vc3RhdGljLnZlY3RlZXp5LmNvbS9zeXN0ZW0vcmVzb3VyY2VzL3RodW1ibmFpbHMvMDIyLzYxOS8zNjQvc21hbGxfMngvb25lLWNvbnRpbnVvdXMtbGluZS1kcmF3aW5nLW9mLXdob2xlLWhlYWx0aHktb3JnYW5pYy1hbG1vbmRzLWdyb3VwLWZvci1nYXJkZW4tbG9nby1pZGVudGl0eS1mcmVzaC1lZGlibGUtc2VlZC1jb25jZXB0LWZvci1mcnVpdC1pY29uLW1vZGVybi1zaW5nbGUtbGluZS1kcmF3LWRlc2lnbi1ncmFwaGljLXZlY3Rvci1pbGx1c3RyYXRpb24tcG5nLnBuZ1wiKTtcbiAgICAkKFwiLnNlZWQxLCAuc2VlZDIsIC5zZWVkMywgLnNlZWQ0LCAuc2VlZDUsIC5zZWVkNlwiKS5jc3MoXCJ3aWR0aFwiLCBcIjI1MHB4XCIpO1xuICAgICQoXCIuc2V3aW5nQWN0aXZpdHlcIikuaGlkZSgpO1xuICAgICQoXCIuc2V3aW5nQ2xvdGhlc0FjdGl2aXR5XCIpLmhpZGUoKTtcbiAgICAkKFwiLnNld2luZ0Nsb3RoZXNBY3Rpdml0eVwiKS5jc3MoXCJiYWNrZ3JvdW5kLWltYWdlXCIsIFwidXJsKGh0dHBzOi8vaS5wb3N0aW1nLmNjL0xYWjk4WHNoL3Nld2luZy1NYWNoaW5lLmpwZylcIik7XG4gICAgJChcIi5zZXdpbmdDbG90aGVzVGV4dFwiKS5odG1sKFwiRG91YmxlIGNsaWNrIG9uIHRoZSBzZXdpbmcgbWFjaGluZSB0byBicmluZyBmb3J0aCBuZXcgY2xvdGhlcyBmb3IgbXkgbGl0dGxlIG9uZXMuXCIpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvblBhZ2VcIikuaGlkZSgpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvblRleHRcIikuaHRtbChcIllvdXIga2luZG5lc3Mga25vd3Mgbm8gYm91bmRzLCBteSBsb3ZlLiBJbiB0aGVzZSBtb21lbnRzIHdoZW4gaGVhcnRzIGNvbnZlcmdlLCBJIGh1bWJseSBpbnZpdGUgeW91IHRvIGpvaW4gbWUgaW4gbWFraW5nIGR1YSBmb3IgUGFsZXN0aW5lLCBvdXIgYmVsb3ZlZCBsYW5kLiBJbiB0aGUgZW1icmFjZSBvZiBvdXIgdHJhZGl0aW9ucywgZHVhIGlzIGEgY2hlcmlzaGVkIGFjdCwgYW4gZWNobyBvZiBob3BlIHRoYXQgcmV2ZXJiZXJhdGVzIGFjcm9zcyBvdXIgbGFuZC48YnI+PGJyPkFzIHRoZSBRdXJhbiByZW1pbmRzIHVzIGluIFN1cmFoIEFsLUJhcWFyYWgsICdBbGxhaCBkb2VzIG5vdCBidXJkZW4gYSBzb3VsIGJleW9uZCB0aGF0IGl0IGNhbiBiZWFyJyBbUXVyYW4sIDI6Mjg2XS4gT3VyIGxhbmQsIG91ciBwZW9wbGUsIHdlIGhvbGQgdGhlbSBkZWFyIGluIG91ciBoZWFydHMsIGFuZCBpbiBvdXIgcHJheWVycywgd2Ugc2VlayBwZWFjZSBhbmQganVzdGljZS48YnI+PGJyPldpbGwgeW91IGpvaW4gbWUgaW4gdGhpcyBoZWFydGZlbHQgcHJheWVyP1wiKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25ZZXNCdXR0b25cIikuc2hvdygpO1xuICAgICQoXCIuZHVhSW52aXRhdGlvbk5vQnV0dG9uXCIpLnNob3coKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25ZZXNOZXh0QnV0dG9uXCIpLmhpZGUoKTtcbiAgICAkKFwiLmR1YUludml0YXRpb25Ob05leHRCdXR0b25cIikuaGlkZSgpO1xuICAgICQoXCIuZHVhUGFnZVwiKS5oaWRlKCk7XG4gICAgJChcIi5jbG9zaW5nUGFnZVwiKS5oaWRlKCk7XG59XG5cblxuLy9Vc2VyIGNsaWNrcyByZXBsYXlcbiQoXCIucmVwbGF5QnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgIHJlc2V0R2FtZSgpO1xufSk7Il19</script></body></html>
