@@ -1,0 +1,249 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*Youtube video container*/
+.video {
+    width: 460px; 
+    height: 215px;
+}
+
+
+/*Content containers*/
+.rightContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    right: 130px;
+}
+
+.topRightContainer {
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 130px;
+}
+
+.leftContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}
+
+.farLeftContainer {
+    width: 40%;
+    position: absolute;
+    top: 130px;
+    left: -50px;
+}
+
+.middleContainer {
+    width: 80%;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+}
+
+.bottomContainer {
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+
+/*Button*/
+button {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0px;
+    width: 150px;
+    height: 50px;
+    border: gray solid 2px;
+    cursor: pointer;
+}
+
+
+/*Landing Page Section*/
+.landingPage {
+    background: url("https://i.postimg.cc/3xr1BLRY/sitti.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Sitti Intro Section*/
+.landingPage_Play {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/462/original/single-continuous-line-drawing-of-young-pretty-saudi-arabian-muslimah-wearing-burqa-and-pensive-seriously-traditional-muslim-woman-niqab-with-hijab-concept-one-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Home Page*/
+.homePage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/980/687/original/single-continuous-line-drawing-green-eco-modest-house-at-village-home-building-construction-isolated-minimalism-concept-dynamic-one-line-draw-graphic-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Lamp Activity Section*/
+.lampActivity {
+    background: url("https://i.postimg.cc/2yF6VSdF/lamp-No-Color-Photo-Room-png-Photo-Room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Cooking Page*/
+.cookingPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/985/697/original/continuous-one-line-drawing-arabian-housewife-enjoying-smell-of-cooking-from-pot-prepare-food-at-cozy-kitchen-cooking-at-home-healthy-food-single-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Food Activity Section*/
+.foodActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/023/636/564/original/one-single-line-drawing-of-muslim-people-open-and-raise-hands-to-pray-to-god-islamic-holy-day-ramadan-kareem-and-eid-mubarak-greeting-card-concept-continuous-line-draw-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    cursor: url('https://i.postimg.cc/cJwMjbN9/plate-1.webp'), auto;
+}
+
+
+/*Choose Activity Page Section*/
+.chooseActivityPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/988/567/original/continuous-one-line-drawing-smiling-confident-arabian-woman-in-hijab-keeping-arms-crossed-active-businesswoman-standing-with-folded-arms-pose-single-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Gardening Activity Section*/
+.gardeningActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/473/original/single-continuous-line-drawing-of-young-happy-saudi-arabian-muslimah-wearing-burqa-while-holding-rose-flower-traditional-muslim-woman-niqab-with-hijab-concept-one-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Gardening Seeds Activity Section*/
+.gardeningSeedsActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/980/718/original/single-one-line-drawing-of-open-hand-gesture-holding-hand-icon-silhouette-for-organization-concept-infographics-charity-presentation-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.patches {
+    cursor: url('https://i.postimg.cc/mgZcYpdf/can-3.png'), auto;
+}
+
+
+/*Sewing Activity Section*/
+.sewingActivity {
+    background: url("https://static.vecteezy.com/system/resources/previews/023/636/540/original/single-continuous-line-drawing-of-young-beautiful-muslimah-wearing-head-scarf-leaning-on-the-wall-beautiful-asian-woman-model-in-trendy-hijab-fashion-concept-one-line-draw-design-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Sewing Clothes Activity Section*/
+.sewingClothesActivity {
+    background: url("https://i.postimg.cc/LXZ98Xsh/sewing-Machine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+
+/*Invitation for Dua Section*/
+.duaInvitationPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/026/988/569/original/single-one-line-drawing-young-arabic-woman-keeping-hands-on-chest-smiling-friendly-female-expressing-gratitude-emotion-body-language-concept-continuous-line-draw-design-graphic-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+} 
+
+
+/*Dua for Palestine Section*/
+.duaPage {
+    background: url("https://i.postimg.cc/J72pkYjs/hand.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
+
+.duaPage .text {
+    background: rgba(0, 0, 0, 0.75); 
+    color: white; 
+    padding: 4px 8px;
+}
+
+.duaPageText {
+    font-size: 22px;
+}
+
+
+/*Game Closing Section*/
+.closingPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/604/439/original/one-continuous-line-drawing-of-young-happy-saudi-arabian-muslimah-wearing-burqa-and-covering-face-with-hands-traditional-islamic-woman-niqab-dress-concept-single-line-draw-design-vector-illustration-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    text-align: center;
+}
